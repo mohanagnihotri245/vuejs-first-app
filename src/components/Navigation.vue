@@ -38,24 +38,19 @@
       <DisclosurePanel class="lg:hidden">
         <div class="space-y-1 pt-2 pb-3">
           <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" -->
-          <DisclosureButton as="a" :class="getLinkClassMobile('/')" > 
-            <router-link to="/">
+          <router-link to="/"> 
+            <DisclosureButton as="a" :class="getLinkClassMobile('/')" > 
               Home
-
-            </router-link>
-          </DisclosureButton>
-          <DisclosureButton as="a" :class="getLinkClassMobile('/AboutUs')">
-            <router-link to="/AboutUs">
+          </DisclosureButton> 
+        </router-link>
+        <router-link to="/AboutUs">  <DisclosureButton as="a" :class="getLinkClassMobile('/AboutUs')">
               About Us
-
-            </router-link>
-          </DisclosureButton>
-          <DisclosureButton as='a':class="getLinkClassMobile('/ContactUs')">
-            <router-link to="/ContactUs">
+          </DisclosureButton> 
+         </router-link>
+         <router-link to="/ContactUs"><DisclosureButton as='a':class="getLinkClassMobile('/ContactUs')">
               Contact Us
-               
-            </router-link>
           </DisclosureButton>
+        </router-link>
           <!-- <DisclosureButton as="a" :class="getLinkClassMobile('/Domain')">Domains</DisclosureButton> -->
         </div>
         <div class="border-t border-gray-200 pt-4 pb-3">
