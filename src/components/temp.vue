@@ -10,7 +10,7 @@
 
   <div class="carousel-inner">
     <div class="carousel-item active c-item">
-      <img src="D:\project\Vitana_Tailwind\src\assets\data.png" class="d-block w-100 c-img" alt="Slide 1">
+      <img src="https://res.cloudinary.com/dqhy9zq3g/image/upload/f_auto,q_auto/v1/Vuejs-project/yiwatrdfygpjho4bg14i" class="d-block w-100 c-img" alt="Slide 1">
       <div class="carousel-caption top-20 mt-4">
         <!-- <p class="mt-5 fs-3 text-uppercase">Discover the hidden world</p> -->
         <h1 class="display-1 fw-bolder text-capitalize">Data Engineering </h1>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <img src="D:\project\Vitana_Tailwind\src\assets\analysis.jpg" class="d-block w-100 c-img" alt="Slide 2">
+      <img src="https://res.cloudinary.com/dqhy9zq3g/image/upload/f_auto,q_auto/v1/Vuejs-project/gekopdhiym1mp6mk2seq" class="d-block w-100 c-img" alt="Slide 2">
       <div class="carousel-caption top-12 mt-4">
         <!-- <p class="text-uppercase fs-3 mt-5">The season has arrived</p> -->
         <p class="display-1 fw-bolder text-capitalize">Analytics & Business Intelligence</p>
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <img src="D:\project\Vitana_Tailwind\src\assets\Cloud.jpg" class="d-block w-100 c-img" alt="Slide 3">
+      <img src="https://res.cloudinary.com/dqhy9zq3g/image/upload/f_auto,q_auto/v1/Vuejs-project/g0l7jsoxiq2laf2fmzfs" class="d-block w-100 c-img" alt="Slide 3">
       <div class="carousel-caption top-12 mt-4">
         <!-- <p class="text-uppercase fs-3 mt-5">Destination activities</p> -->
         <p class="display-1 fw-bolder text-capitalize">IT Infrastructure & Cloud Services</p>
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="carousel-item c-item">
-      <img src="D:\project\Vitana_Tailwind\src\assets\pexelse.jpg" class="d-block w-100 c-img" alt="Slide 4">
+      <img src="https://res.cloudinary.com/dqhy9zq3g/image/upload/f_auto,q_auto/v1/Vuejs-project/oxo24fjubwpzn9ozxei4" class="d-block w-100 c-img" alt="Slide 4">
       <div class="carousel-caption top-20 mt-4">
         <!-- <p class="text-uppercase fs-3 mt-5">Adventure Awaits</p> -->
         <p class="display-1 fw-bolder text-capitalize">
@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="carousel-item c-item"> <!-- New slide -->
-      <img src="D:\project\Vitana_Tailwind\src\assets\staff.jpeg" class="d-block w-100 c-img" alt="Slide 5">
+      <img src="https://res.cloudinary.com/dqhy9zq3g/image/upload/f_auto,q_auto/v1/Vuejs-project/dctynaqxkpwbvda6t5eh" class="d-block w-100 c-img" alt="Slide 5">
       <div class="carousel-caption top-20 mt-4">
         <!-- <p class="text-uppercase fs-3 mt-5">Discover the beauty</p> -->
         <p class="display-1 fw-bolder text-capitalize">Staffing Solutions</p>
