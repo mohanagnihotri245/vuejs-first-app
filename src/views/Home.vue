@@ -55,7 +55,7 @@ const supportLinks = [
 
                     <div class="mt-6">
                         <h2 class="text-3xl font-bold tracking-tight text-white">
-                            Natural Language Processing (NLP):
+                            Natural Language Processing:
                         </h2>
                         <p class="mt-4 text-lg text-gray-300">
                             The AI product utilizes advanced NLP algorithms to understand and interpret human language,
