@@ -32,12 +32,8 @@
                     <CheckIcon class="h-6 w-6 text-green-600" aria-hidden="true" />
                   </div>
                   <div class="mt-3 text-center sm:mt-5">
-                    <DialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">Payment successful</DialogTitle>
-                    <div class="mt-2">
-                      <p class="text-sm text-gray-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.
-                      </p>
-                    </div>
+                    <DialogTitle as="h3" class="text-lg font-medium leading-6 text-gray-900">We will get back to you soon</DialogTitle>
+                    
                   </div>
                 </div>
                 <div class="mt-5 sm:mt-6">
