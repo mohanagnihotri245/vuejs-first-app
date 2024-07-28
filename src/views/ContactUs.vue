@@ -82,7 +82,8 @@
         </SwitchGroup>
       </div>
       <div class="mt-10">
-        <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+        <button type="button"class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Let's talk</button>
+        
       </div>
     </form>
   </div>
@@ -97,7 +98,9 @@
             <label for="email-address" class="sr-only">Email address</label>
             <input id="email-address" name="email-address" type="email" autocomplete="email" required="" class="w-full rounded-md border border-blue-gray-300 px-5 py-3 placeholder-blue-gray-400 shadow-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 sm:max-w-xs" placeholder="Enter your email" />
             <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button type="submit" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-3 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Notify me</button>
+              <button  type="submit" class="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-5 py-3 text-base font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Notify me</button>
+
+               
             </div>
           </form>
           <p class="mt-3 text-sm text-blue-gray-500">
@@ -111,12 +114,22 @@
 
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue'
+import Modal from '@/components/Modal.vue';
 import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue'
 import Navigation from '@/components/Navigation.vue';
-
+export default {
+  methods: {
+    handleClick(event) {
+      // Prevent any default action
+      event.preventDefault();
+      // Your custom logic here
+      console.log("Button click prevented!");
+    }
+  }
+};
 const agreed = ref(false)
 </script>
       
