@@ -1,39 +1,57 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
-<template>
-  <Header/>
-    
-    
-    
-    <section class="mx-auto max-w-md divide-y-2 divide-blue-gray-200 py-20 px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:py-25 lg:px-8" aria-labelledby="faq-heading">
-          <h2 class="text-3xl font-bold tracking-tight text-blue-gray-900" id="faq-heading">Frequently asked questions</h2>
-          <div class="mt-6 pt-10">
-            <dl class="space-y-10 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12 md:space-y-0">
-              <div v-for="faq in faqs" :key="faq.id">
-                <dt class="text-lg font-medium text-blue-gray-900">{{ faq.question }}</dt>
-                <dd class="mt-2 text-base text-blue-gray-500">{{ faq.answer }}</dd>
-              </div>
-            </dl>
-          </div>
-        </section>
-     
-        
-        <div class="flex items-center justify-center h-20 bg-gray-300">
-      <p class="text-sm leading-6 text-gray-900">
-      
-        </p>
-</div>
 
+<template>
+<!-- Start of template--> 
+
+  <!-- Injecting  Header Component -->
+  <Header/>
+
+  
+   <!-- Section containing Frequently Asked Questions (FAQ) -->
+<section class="mx-auto max-w-md divide-y-2 divide-blue-gray-200 py-20 px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:py-25 lg:px-8" aria-labelledby="faq-heading">
+  
+  <!-- Heading for the FAQ section -->
+  <h2 class="text-3xl font-bold tracking-tight text-blue-gray-900" id="faq-heading">Frequently asked questions</h2>
+  
+  <!-- Container for the FAQ items -->
+  <div class="mt-6 pt-10">
+    
+    <!-- Description list to hold FAQs in a responsive grid layout -->
+    <dl class="space-y-10 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12 md:space-y-0">
+      
+      <!-- Loop through the FAQs and display each one -->
+      <div v-for="faq in faqs" :key="faq.id">
+        
+        <!-- FAQ question -->
+        <dt class="text-lg font-medium text-blue-gray-900">{{ faq.question }}</dt>
+        
+        <!-- FAQ answer -->
+        <dd class="mt-2 text-base text-blue-gray-500">{{ faq.answer }}</dd>
+      
+      </div>
+    </dl>
+  </div>
+</section>
+
+     
+   <!-- The gray Line before the footer  -->
+   <div class="flex items-center justify-center h-20 bg-gray-300"></div>
+        
+   <!-- End of template-->
   </template>
   
   <script setup>
- import cards from '@/components/cards.vue'
+// Start of Script
+
+// Components Call
 import Header from '@/components/Header.vue';
-  const metrics = [
-    { id: 1, stat: '8K+', emphasis: 'Companies', rest: 'use laoreet amet lacus nibh integer quis.' },
-    { id: 2, stat: '25K+', emphasis: 'Countries around the globe', rest: 'lacus nibh integer quis.' },
-    { id: 3, stat: '98%', emphasis: 'Customer satisfaction', rest: 'laoreet amet lacus nibh integer quis.' },
-    { id: 4, stat: '12M+', emphasis: 'Issues resolved', rest: 'lacus nibh integer quis.' },
-  ]
+
+import { defineComponent, h } from 'vue'
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
+import { Bars3Icon, LifebuoyIcon, NewspaperIcon, PhoneIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+
+// Creating Dumby data, can also use json file on a database
+
+// Data used in QnA section (javascript object)
   const faqs = [
   {
     id: 1,
@@ -72,4 +90,5 @@ import Header from '@/components/Header.vue';
   },
 ]
 
-  </script>
+// End of Script
+</script>

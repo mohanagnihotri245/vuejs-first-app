@@ -1,21 +1,29 @@
 <script setup>
+// Start of Script
 
-import Header from '@/components/Header.vue';
-import Banner from '@/components/Banner.vue';
-import temp from '@/components/temp.vue';
-import alterphotos from '@/components/alterphotos.vue'
-import { defineComponent, h } from 'vue'
-import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import { Bars3Icon, LifebuoyIcon, NewspaperIcon, PhoneIcon, XMarkIcon } from '@heroicons/vue/24/outline'
+// Component Call
+import Slider from '@/components/Slider.vue';
+import Platforms from '@/components/Platforms.vue'
 
+// End of Script
 </script>
 
 <template>
-    <temp/>
-    <Banner/>
- <alterphotos/>
+<!-- Start of template--> 
+    
+ <!-- Injecting  Header Component -->
+    <Slider/>
+  
+ <!--   Banner  -->
+     <div class="flex items-center justify-center h-20 bg-gray-300">
+         <p class="text-sm leading-6 text-gray-900">
+             <strong class="font-semibold text-2xl">Core Services At &copy; Vitana Inc.</strong>
+          </p>
+      </div>
+
+
+ <!-- Injecting  Platforms Component -->
+    <Platforms/>
+
+<!-- End of template-->
 </template>
-
-<style scoped>
-
-</style>
