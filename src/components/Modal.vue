@@ -61,7 +61,4 @@
   const open = ref(true);
   </script>
   
-  <style scoped>
-  /* Add any additional styling if needed */
-  </style>
   
