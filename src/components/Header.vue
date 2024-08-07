@@ -96,7 +96,6 @@
 
 <script setup>
 
-
   // Links data array
   const links = [
     { name: '12 Offices worldwide', href: '#' },
