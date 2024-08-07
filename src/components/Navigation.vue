@@ -15,9 +15,12 @@
             </div>
             <!-- Navigation links for large screens -->
             <div class="hidden lg:ml-6 lg:flex lg:space-x-8">
+            <!-- Routing links for Navigation -->
               <router-link to="/" :class="getLinkClass('/')">Home</router-link>
               <router-link to="/AboutUs" :class="getLinkClass('/AboutUs')">About Us</router-link>
               <router-link to="/ContactUs" :class="getLinkClass('/ContactUs')">Contact Us</router-link>
+              
+                 
             </div>
           </div>
           <!-- Search input container -->
@@ -35,7 +38,7 @@
           <!-- Mobile menu button -->
           <div class="flex items-center lg:hidden">
             <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-              <span class="sr-only">Open main menu</span>
+              
               <!-- Icon for opening the mobile menu -->
               <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
               <!-- Icon for closing the mobile menu -->
@@ -73,9 +76,10 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid'
 import { useRoute } from 'vue-router'
-
+// import Dropdown from './Dropdown.vue';
+import { ref } from 'vue'
 const route = useRoute()
-
+const showDropdown = ref(false)
 // Function to determine the class for navigation links
 const getLinkClass = (path) => {
   return route.path === path
