@@ -1,7 +1,5 @@
 <!-- Template for the footer -->
 <template>
-  <!-- Start of template--> 
-
   <footer class="bg-blue" aria-labelledby="footer-heading">
     <!-- Hidden heading for accessibility -->
     <h2 id="footer-heading" class="sr-only">Footer</h2>
@@ -87,13 +85,10 @@
       </div>
     </div>
   </footer>
-   <!-- End of template-->
 </template>
 
 <!-- Script setup for Vue -->
 <script setup>
-// Start of Script
-
 import { defineComponent, h } from 'vue'
 
 const navigation = {
@@ -122,7 +117,6 @@ const navigation = {
     { name: 'Consumer Packaged Goods', href: '#' },
     { name: 'Manufacturing', href: '#' },
   ],
-  // Fevions for social media 
   social: [
     {
       name: 'Facebook',
@@ -166,5 +160,4 @@ const navigation = {
     },
   ],
 }
-// End of Script
 </script>

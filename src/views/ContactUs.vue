@@ -169,7 +169,6 @@
   </section>
 </div>
 
- <!-- End of template-->
 </template>
 
 <script>
