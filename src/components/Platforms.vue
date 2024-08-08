@@ -47,7 +47,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import data from '@/client/data.json'
+import data from '@/client/Client_1/data.json'
 
 const platformData = ref([])
 

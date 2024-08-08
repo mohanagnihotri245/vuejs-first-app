@@ -29,17 +29,13 @@
       <div class="mr-auto ml-auto max-w-3xl lg:ml-0 lg:mr-8">
         
         <!-- Heading -->
-        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with Vitana</h2>
+        <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          {{ header[0]?.title }}
+        </h2>
         
         <!-- Paragraph with description -->
-        <p class="mt-6 text-lg leading-8 text-gray-300">
-          Vitana is a global professional services firm that offers top-notch Data Engineering, Analytics, IT, and Staffing
-          solutions to organizations. Using advanced technologies and innovation, they deliver transformational outcomes in a
-          competitive digital world.
-          <br><br>
-          Beginning in 2015, Vitana changed the way professional services are offered. We focus on building long lasting
-          relationships and help our customers succeed over building our bottom line. Our clients have continuously ranked us a
-          top vendor.
+        <p class="mt-6 text-lg leading-8 text-gray-300" v-html="header[0]?.description">
+
         </p>
       </div>
       
@@ -48,7 +44,7 @@
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
           
           <!-- Dynamic link rendering -->
-          <a v-for="link in links" :key="link.name" :href="link.href">{{ link.name }} <span aria-hidden="true">&rarr;</span></a>
+          <a v-for="link in links" :key="link.name" :href="link.href">{{ link?.name }} <span aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
     </div>
@@ -57,36 +53,11 @@
     <div class="mx-auto mt-10 max-w-7xl px-6 lg:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         
-        <!-- Card 1: Mission -->
-        <div class="max-w-sm border border-gray-300 bg-transparent rounded overflow-hidden shadow-lg">
+        <!-- Dynamic card rendering -->
+        <div v-for="card in cards" :key="card.title" class="max-w-sm border border-gray-300 bg-transparent rounded overflow-hidden shadow-lg">
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-white">Mission</div>
-            <p class="text-gray-300 text-base">
-              Understand our client’s unique needs and deliver highest quality, customized business solutions at an affordable
-              cost.
-            </p>
-          </div>
-        </div>
-        
-        <!-- Card 2: Vision -->
-        <div class="max-w-sm border border-gray-300 bg-transparent rounded overflow-hidden shadow-lg">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-white">Vision</div>
-            <p class="text-gray-300 text-base">
-              To be a globally recognized corporation that provides next generation technology and staffing solutions, conceived
-              through the power of innovation, executed with superlative agility, and delivered by a team of talented and
-              passionate professionals.
-            </p>
-          </div>
-        </div>
-        
-        <!-- Card 3: Values -->
-        <div class="max-w-sm border border-gray-300 bg-transparent rounded overflow-hidden shadow-lg">
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2 text-white">Values</div>
-            <p class="text-gray-300 text-base">
-              Customer Delight, Innovation, Integrity & Transparency, Pursuit of Excellence
-            </p>
+            <div class="font-bold text-xl mb-2 text-white">{{ card?.title }}</div>
+            <p class="text-gray-300 text-base">{{ card?.description }}</p>
           </div>
         </div>
       </div>
@@ -95,10 +66,23 @@
 </template>
 
 <script setup>
+// Links data array
+const links=ref([])
 
-  // Links data array
-  const links = [
-    { name: '12 Offices worldwide', href: '#' },
-    { name: '300+ Full-time colleagues', href: '#' }
-  ];
+// Cards data array
+const cards = ref([])
+const header=ref([])
+import { ref, onMounted } from 'vue'
+import data from '@/client/Client_1/data.json'
+
+onMounted(() => {
+cards.value = data.cards
+links.value = data.links
+header.value= data.Header
+})
+
 </script>
+
+<style>
+/* Add your styles here if needed */
+</style>

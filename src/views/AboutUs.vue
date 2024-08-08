@@ -53,7 +53,7 @@ import { Bars3Icon, LifebuoyIcon, NewspaperIcon, PhoneIcon, XMarkIcon } from '@h
 
 // Data used in QnA section (javascript object)
 import { ref, onMounted } from 'vue'
-import data from '@/client/data.json'
+import data from '@/client/Client_1/data.json'
 
 const faqs = ref([])
 
