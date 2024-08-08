@@ -13,7 +13,6 @@
     "@heroicons/vue": "^2.1.5",
     "@tailwindcss/forms": "^0.5.7",
     "bootstrap": "^5.3.3",
-    "json-server": "^1.0.0-beta.1",
     "pinia": "^2.1.7",
     "tw-colors": "^3.3.1",
     "vue": "^3.4.29",
