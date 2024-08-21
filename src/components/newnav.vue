@@ -1,4 +1,36 @@
 <template>
+  <footer class="text-center text-lg-start bg-primary text-white">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span class="mx-2"><i class="fa fa-phone mx-1"></i>Contact: (+91) 000000000</span>
+      <span><i class="fa fa-clock mx-1"></i>Mon-Fri: 10:00-4:00</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+   
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+   
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+</footer>
     <!-- Sticky navigation bar -->
     <div class="sticky z-20 top-0">
       <!-- Disclosure component for managing the open state of the menu -->
@@ -19,8 +51,11 @@
                 <router-link to="/" :class="getLinkClass('/')">Home</router-link>
                 <router-link to="/AboutUs" :class="getLinkClass('/AboutUs')">About Us</router-link>
                 <router-link to="/ContactUs" :class="getLinkClass('/ContactUs')">Contact Us</router-link>
+                <span class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium">
+                  <Dropdown/>
+                </span>
                 <!-- Service heading without routing link -->
-        <span :class="getLinkClass('/')">
+        <span class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium">
     <Menu as="div" class="relative inline-block text-left">
       <div>
         <MenuButton>
@@ -94,6 +129,9 @@
                 Contact Us
               </DisclosureButton>
             </router-link>
+            <DisclosureButton as="div">
+              <Temp/>
+              </DisclosureButton>
             <!-- Service heading without routing link -->
             <DisclosureButton as="div" class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800">
                <Menu as="div" class="relative inline-block text-left">
@@ -138,6 +176,8 @@
   import Dropdown from './Dropdown.vue';
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
   import { ChevronDownIcon } from '@heroicons/vue/20/solid'
+
+
   
   const route = useRoute()
   

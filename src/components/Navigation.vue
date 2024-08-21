@@ -1,4 +1,37 @@
 <template>
+  
+<footer class="text-center text-lg-start bg-primary text-white">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span class="mx-2"><i class="fa fa-phone mx-1"></i>Contact: (+91) 000000000</span>
+      <span><i class="fa fa-clock mx-1"></i>Mon-Fri: 10:00-4:00</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+   
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+   
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+</footer>
   <!-- Sticky navigation bar -->
   <div class="sticky z-20 top-0">
     <!-- Disclosure component for managing the open state of the menu -->

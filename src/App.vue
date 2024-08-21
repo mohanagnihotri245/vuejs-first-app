@@ -5,6 +5,8 @@
 import Footer from './components/Footer.vue';
 import Navigation from './components/Navigation.vue';
 import { RouterView } from 'vue-router';
+import Scroll from './components/scroll.vue';
+import Newnav from './components/newnav.vue';
 
 // End of Script
 </script>
@@ -15,8 +17,9 @@ import { RouterView } from 'vue-router';
    <!-- Root Directory  -->
 <div id="app">
   <!-- Injecting  Navigation Component (Common Component on all Pages)-->
-    <Navigation/>
-      
+    <!-- <Navigation/> -->
+    <Newnav/>
+      <Scroll/>
       <!-- Injecting  Routing View  Component for managing Asynchronous nature-->
         <router-view/>
 
